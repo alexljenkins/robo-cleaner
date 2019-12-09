@@ -1,6 +1,7 @@
 """
 The Vacuum Cleaner 1337
 """
+import turtle
 
 class Cleaner(turtle.Turtle):
     def __init__(self):

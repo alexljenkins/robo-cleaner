@@ -3,7 +3,9 @@ Serverside,
 Saves and loads maps.
 Must be able to hold a 'history' to allow for calculations on moveables
 """
+import time
 import turtle
+from agent import Cleaner
 
 def load_room(layout):
     for y in range(len(layout)):
@@ -72,11 +74,17 @@ LAYOUT = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 objects = []
 cleaned = []
 dirty = []
+def loop():
+    delay=0.1
+    while True:
+        # wn.update()
+        time.sleep(delay)
 
-# create map
-pen = Mapper()
-load_room(LAYOUT)
 
-from agent import Cleaner
-# create agent
-# vacuum = Customer())
+if __name__ == '__main__':
+    # create map
+    pen = Mapper()
+    load_room(LAYOUT)
+    # create agent
+    vacuum = Cleaner()
+    loop()

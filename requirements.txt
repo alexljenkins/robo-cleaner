@@ -1,5 +1,4 @@
 pylint
 pytest
 pytest-cov
-turtle
-sklearn
+scikit-learn

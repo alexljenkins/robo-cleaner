@@ -9,6 +9,6 @@ install:
 
 # run tests
 script:
-    - pylint *.py
+    # - pylint *.py
     - pytest
-    - pytest --cov
+    # - pytest --cov

@@ -1,6 +1,5 @@
 pylint
 pytest
 pytest-cov
-time
 turtle
 sklearn
